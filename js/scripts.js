@@ -1,27 +1,28 @@
 //Business Logic
 
 //User Interface Logic
-$(document).ready(funtion() {
+$(document).ready(function() {
   $("form#pingpong-form").submit(function(event) {
     event.preventDefault();
     var getNumber=parseInt($("#new-number").val());
-    var numbers=[];
+    // result = Play(getNumber);
+      $("#new-number").text("");
+    for(var index=1; index<=getNumber; index++) {
+       if(index % 15 === 0) {
+          $("p#result").append("pingpong");
+      }
+      else if(index % 3 === 0) {
+        $("p#result").append("ping");
+      }
+      else if(index % 5 === 0) {
+          $("p#result").append("pong");
+      }
 
-    // numbers.forEach(function(number) {
-    // var userInput = $("input#" + number).val();
-    // $("." + number).text(userInput);
-    // });
-    for(var index=0; index<=getNumber; index++) {
-      if(getnumber % 3 === 0) {
-          return "ping";
+      else{
+        $("p#result").append(index);
       }
-      else if(getnumber % 5 === 0) {
-          return "pong";
-      }
-      else if(getnumber % 15 === 0) {
-          return "pingpong";
-      }
-    $("#new-number").text("numbers[index]");
+      $("p#result").append("<br>");
+
     }
 
   });
