@@ -14,17 +14,15 @@ var getNumToBeDisplayed = function(index)
    return index;
  }
 }
-
 //User Interface Logic
 $(document).ready(function() {
   $("form#pingpong-form").submit(function(event) {
     event.preventDefault();
     var getNumber=parseInt($("#new-number").val());
-      $("#new-number").text("");
+    $("#new-number").text("");
     for(var index=1; index<=getNumber; index++) {
       $("p#result").append(getNumToBeDisplayed(index));
       $("p#result").append("<br>");
-  }
+    }
   });
-
 });
