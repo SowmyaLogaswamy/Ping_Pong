@@ -1,14 +1,13 @@
-.nav-list {
-  list-style: none;
-  padding-right: 15%
+.paragraph {
+  font-style: oblique;;
+  color: red;
 }
-.nav-item a {
+
+.sidenav {
   color: purple;
 }
-.nav-item {
-  padding-left: 50px;
-  display: inline;
-  font-family: sans-serif;
-  font-weight: normal;
-  float: right;
+
+p#result {
+  font-style: oblique;;
+  color: green;
 }
