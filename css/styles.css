@@ -1,0 +1,14 @@
+.nav-list {
+  list-style: none;
+  padding-right: 15%
+}
+.nav-item a {
+  color: purple;
+}
+.nav-item {
+  padding-left: 50px;
+  display: inline;
+  font-family: sans-serif;
+  font-weight: normal;
+  float: right;
+}
